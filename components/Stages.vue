@@ -5,7 +5,7 @@
       <div class="divider" />
       <div class="stages__items d-flex justify-space-between flex-wrap">
         <div v-for="(item, index) in items" :key="index" class="stages__item">
-          <img :src="item.img" alt="" width="100" height="100">
+          <img :src="item.img" alt="" width="90" height="90">
         </div>
       </div>
       <div class="mt-12">

@@ -6,6 +6,7 @@
     <Services />
     <Usefulness />
     <Stages />
+    <Footer />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Reasons from '~/components/Reasons'
 import Services from '~/components/Services'
 import Usefulness from '~/components/Usefulness'
 import Stages from "~/components/Stages";
+import Footer from "~/components/Footer";
 export default {
   components: {
     Header,
@@ -23,7 +25,8 @@ export default {
     Reasons,
     Services,
     Usefulness,
-    Stages
+    Stages,
+    Footer
   }
 }
 </script>

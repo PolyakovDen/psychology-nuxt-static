@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Franklin Gothic Medium";
+  src: local("Franklin Gothic Medium"),
+  url(~assets/Franklin/FranklinGothicMediumRegular.ttf) format("truetype");
+}
+
+html {
+  font-family: "Franklin Gothic Medium", sans-serif;
+}

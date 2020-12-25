@@ -6,6 +6,7 @@
     <Services />
     <Usefulness />
     <Stages />
+    <AboutMe />
     <Footer />
   </div>
 </template>
@@ -17,6 +18,7 @@ import Reasons from '~/components/Reasons'
 import Services from '~/components/Services'
 import Usefulness from '~/components/Usefulness'
 import Stages from "~/components/Stages";
+import AboutMe from "~/components/AboutMe";
 import Footer from "~/components/Footer";
 export default {
   components: {
@@ -26,6 +28,7 @@ export default {
     Services,
     Usefulness,
     Stages,
+    AboutMe,
     Footer
   }
 }

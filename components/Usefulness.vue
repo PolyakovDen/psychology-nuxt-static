@@ -2,7 +2,7 @@
   <v-container fluid class="pl-5 pr-5">
     <h2 class="usefulness__title text-center">Кому будут полезны мои услуги?</h2>
     <div class="usefulness__cards">
-      <div v-for="(item, index) in usefulness" :key="index" class="usefulness__card pt-6 pl-4 pr-4 pb-4">
+      <div v-for="(item, index) in usefulness" :key="index" class="usefulness__card pt-6 pl-4 pr-4 pb-16">
         <div class="usefulness__card--title-wrapper">
           <h3 class="usefulness__card--title text-center">
             {{ item.title }}
@@ -12,9 +12,9 @@
         <p class="usefulness__card--description">
           {{ item.description }}
         </p>
-        <div class="usefulness__card--circle">
-          {{ item.number }}
-        </div>
+        <!--        <div class="usefulness__card&#45;&#45;circle">-->
+        <!--          {{ item.number }}-->
+        <!--        </div>-->
       </div>
     </div>
   </v-container>
@@ -103,18 +103,18 @@ export default {
 		text-align: center;
 		margin: 0 auto;
 	}
-	.usefulness__card--circle {
-		width: 30px;
-		height: 30px;
-		line-height: 30px;
-		background: white;
-		border-radius: 50%;
-		text-align: center;
-		margin: 0 auto;
-		color: #3b5859;
-		font-size: 15px;
-		margin-top: 20px;
-		font-family: 'Arial', sans-serif;
-		font-weight: bold;
-	}
+	/*.usefulness__card--circle {*/
+	/*	width: 30px;*/
+	/*	height: 30px;*/
+	/*	line-height: 30px;*/
+	/*	background: white;*/
+	/*	border-radius: 50%;*/
+	/*	text-align: center;*/
+	/*	margin: 0 auto;*/
+	/*	color: #3b5859;*/
+	/*	font-size: 15px;*/
+	/*	margin-top: 20px;*/
+	/*	font-family: 'Arial', sans-serif;*/
+	/*	font-weight: bold;*/
+	/*}*/
 </style>

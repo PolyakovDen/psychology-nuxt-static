@@ -64,6 +64,7 @@ export default {
   }
 	.wrapper {
 		background-color: #dee3da;
+    height: 100vh;
 	}
 	.main__title {
 		font-size: 30px;

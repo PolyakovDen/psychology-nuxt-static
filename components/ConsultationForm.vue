@@ -14,19 +14,18 @@
         </v-btn>
       </template>
 
-      <div class="consultation__form">
+      <div class="form">
         <v-form
           ref="form"
-          name="psychologyForm"
+          name="formPost"
           v-model="valid"
           lazy-validation
-          netlify
           method="POST"
           action="/success"
           data-netlify="true"
           class="consultation__form--block"
         >
-          <input type="hidden" name="form-name" value="psychologyForm" />
+          <input type="hidden" name="form-name" value="formPost" />
           <v-container>
             <v-row justify="center" class="pa-2">
               <v-col
@@ -145,7 +144,7 @@
     color: black !important;
     opacity: 1;
   }
-  .consultation__form {
+  .form {
     background-color: #dee3da;
     border-radius: 25px;
   }

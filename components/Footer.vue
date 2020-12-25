@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div id="footer" class="wrapper">
     <v-container fluid class="pl-5 pr-5">
       <div class="footer d-flex justify-space-between flex-wrap mt-16 mb-10">
         <div class="footer__my-contacts">

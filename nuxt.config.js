@@ -4,12 +4,12 @@ export default {
   target: 'static',
 
   head: {
-    titleTemplate: 'Psy',
-    title: 'Psy',
+    titleTemplate: 'Психолог Александр Самойлюк',
+    title: 'Психолог Александр Самойлюк',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Психолог Александр Самойлюк, психолог в Киеве, психоанализ, психологическая помощь, консультирование, терапия, паника, депрессия, утрата смысла жизни,  эмоциональная зависимость' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

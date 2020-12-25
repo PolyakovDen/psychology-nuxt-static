@@ -26,14 +26,6 @@
         </div>
       </div>
     </div>
-<!--    <div class="about-me__mobile">-->
-<!--      <ul>-->
-<!--        <li>-->
-<!--          <v-icon color="#37432b" size="30">mdi-checkbox-marked-circle-outline</v-icon>-->
-<!--          1. 100% конфиденциальность закреплена в письменном виде-->
-<!--        </li>-->
-<!--      </ul>-->
-<!--    </div>-->
   </v-container>
 </template>
 
@@ -101,9 +93,6 @@
     top: 120px;
     left: 280px;
   }
-  /*.about-me__mobile {*/
-  /*  display: none;*/
-  /*}*/
   @media screen and (max-width: 960px) {
     .about-me__wrapper1 {
       margin-right: 0;

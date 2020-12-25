@@ -48,7 +48,6 @@ export default {
       items: [
         { link:'#main', title: 'Главная' },
         { link:'#services', title: 'Услуги' },
-        { link:'#reviews', title: 'Отзывы' },
         { link:'#footer', title: 'Контакты' }
       ]
     }

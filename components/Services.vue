@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div id="services" class="wrapper">
     <v-container fluid class="pl-5 pr-5">
       <h2 class="main__title text-center mt-8">
         Услуги

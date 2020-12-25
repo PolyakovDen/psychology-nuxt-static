@@ -13,9 +13,7 @@
             «Мы знаем, кто мы есть, но не знаем,
             кем мы можем быть.» — Уильям Шекспир
           </p>
-          <v-btn class="consultation__btn pa-10 mt-10">
-            Получить консультацию
-          </v-btn>
+          <ConsultationForm />
         </div>
       </v-col>
     </v-row>
@@ -23,8 +21,12 @@
 </template>
 
 <script>
+  import ConsultationForm from "~/components/ConsultationForm";
   export default {
-    name: "Me"
+    name: "Me",
+    components: {
+      ConsultationForm
+    }
   }
 </script>
 
@@ -51,11 +53,5 @@
     font-size: 20px;
     font-weight: 500;
     color: #1f2719;
-  }
-  .consultation__btn {
-    text-transform: none;
-    font-size: 18px;
-    background-color: #5c7148 !important;
-    border-radius: 50px;
   }
 </style>

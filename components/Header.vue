@@ -13,15 +13,14 @@
             {{ item.title }}
           </v-btn>
         </v-toolbar-items>
-        <v-menu offset-y transition="fab-transition">
+        <v-menu offset-y transition="slide-x-transition">
           <template v-slot:activator="{ on, attrs }">
             <v-btn
-              dark
-              class="hidden-md-and-up"
+              class="header__menu--logo hidden-md-and-up"
               v-bind="attrs"
               v-on="on"
             >
-              Меню
+              <v-icon size="30">mdi-menu</v-icon>
             </v-btn>
           </template>
           <v-list>
@@ -82,5 +81,12 @@ export default {
   .menu__link:hover {
     border-bottom: 1px solid #fff;
     margin-bottom: -1px;
+  }
+  .header__menu--logo {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+  ::v-deep .v-list {
+    background-color: #5c7148 !important;
   }
 </style>

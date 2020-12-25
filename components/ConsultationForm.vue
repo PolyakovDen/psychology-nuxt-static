@@ -20,6 +20,7 @@
           name="psychologyForm"
           v-model="valid"
           lazy-validation
+          netlify
           method="POST"
           action="/success"
           data-netlify="true"

@@ -74,7 +74,7 @@ export default {
   }
   .toolbar__items {
     text-transform: none;
-    font-size: 17px;
+    font-size: 17px !important;
   }
   .menu__link {
     cursor: pointer;

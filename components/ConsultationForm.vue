@@ -1,19 +1,5 @@
 <template>
   <div class="text-center">
-    <v-dialog
-      v-model="dialog"
-      width="500"
-    >
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          class="consultation__btn pa-10 mt-10"
-          v-bind="attrs"
-          v-on="on"
-        >
-          Получить консультацию
-        </v-btn>
-      </template>
-
       <div class="form">
         <v-form
           ref="form"
@@ -94,7 +80,6 @@
           </v-container>
         </v-form>
       </div>
-    </v-dialog>
   </div>
 </template>
 

@@ -5,14 +5,16 @@
       <div class="divider" />
       <div class="stages__items d-flex justify-space-between flex-wrap">
         <div v-for="(item, index) in items" :key="index" class="stages__item">
-          <img :src="item.img" alt="" width="90" height="90">
+          <button @click="showDescription(item)">
+            <img :src="item.img" alt="" :width="item.width" :height="item.height">
+          </button>
         </div>
       </div>
       <div class="mt-12">
         <img class="stages__arrow" src="/17.png" alt="" width="1500">
       </div>
       <p class="stages__description text-center">
-        Первый контакт, обращение по телефону или по почте
+        {{ description }}
       </p>
     </v-container>
   </div>
@@ -25,27 +27,58 @@
       return {
         items: [
           {
-            img: '10.png'
+            img: '10.png',
+            width: 90,
+            height: 90,
+            description: 'Первый контакт, обращение по телефону или по почте'
           },
           {
-            img: '11.png'
+            img: '11.png',
+            width: 90,
+            height: 90,
+            description: 'Знакомство в формате оффлайн или онлайн консультации, формирование проблемы и определение этапов работы'
           },
           {
-            img: '12.png'
+            img: '12.png',
+            width: 90,
+            height: 90,
+            description: 'Совместное принятие решения относительно формата дальнейшей работы'
           },
           {
-            img: '13.png'
+            img: '13.png',
+            width: 90,
+            height: 90,
+            description: 'Создание программы консультирования, разработка методологии и определение порядка внедрения'
           },
           {
-            img: '14.png'
+            img: '14.png',
+            width: 90,
+            height: 90,
+            description: 'Детальное углубление в процесс, поиск корня проблем и вариантов его решения'
           },
           {
-            img: '15.png'
+            img: '15.png',
+            width: 90,
+            height: 90,
+            description: 'Практическое внедрение советов и решений в жизни пациента'
           },
           {
-            img: '16.png'
+            img: '16.png',
+            width: 90,
+            height: 90,
+            description: 'Подведение итогов терапии, анализ и завершение сотрудничества'
           }
-        ]
+        ],
+        description: ''
+      }
+    },
+    created () {
+      this.description = this.items[0].description
+    },
+    methods: {
+      showDescription (item) {
+        this.description = ''
+        this.description = item.description;
       }
     }
   }

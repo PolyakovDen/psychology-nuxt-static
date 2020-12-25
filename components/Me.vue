@@ -13,7 +13,21 @@
             «Мы знаем, кто мы есть, но не знаем,
             кем мы можем быть.» — Уильям Шекспир
           </p>
-          <ConsultationForm />
+          <v-dialog
+            v-model="dialog"
+            width="500"
+          >
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                class="consultation__btn pa-10 mt-10"
+                v-bind="attrs"
+                v-on="on"
+              >
+                Получить консультацию
+              </v-btn>
+            </template>
+            <ConsultationForm />
+          </v-dialog>
         </div>
       </v-col>
     </v-row>
@@ -26,6 +40,11 @@
     name: "Me",
     components: {
       ConsultationForm
+    },
+    data () {
+      return {
+        dialog: false
+      }
     }
   }
 </script>
@@ -38,6 +57,12 @@
     margin-top: 270px;
     margin-bottom: 270px;
     text-align: center;
+  }
+  .consultation__btn {
+    text-transform: none;
+    font-size: 18px !important;
+    background-color: #5c7148 !important;
+    border-radius: 50px;
   }
   .me__description {
     font-weight: 500;
@@ -53,5 +78,8 @@
     font-size: 20px;
     font-weight: 500;
     color: #1f2719;
+  }
+  ::v-deep .v-dialog {
+    border-radius: 25px !important;
   }
 </style>

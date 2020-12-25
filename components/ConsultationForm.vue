@@ -133,7 +133,7 @@
 <style scoped>
   .consultation__btn {
     text-transform: none;
-    font-size: 18px;
+    font-size: 18px !important;
     background-color: #5c7148 !important;
     border-radius: 50px;
   }

@@ -2,32 +2,34 @@
   <v-container fluid class="pl-5 pr-5">
     <v-row no-gutters>
       <v-col cols="12" lg="5" md="7" sm="12">
-        <div class="me">
-          <p class="me__description">
-            Профессиональная помощь практикующего психолога
-          </p>
-          <h2 class="me__title">
-            Александра Самойлюка
-          </h2>
-          <p class="me__annotation mt-10">
-            «Мы знаем, кто мы есть, но не знаем,
-            кем мы можем быть.» — Уильям Шекспир
-          </p>
-          <v-dialog
-            v-model="dialog"
-            width="500"
-          >
-            <template v-slot:activator="{ on, attrs }">
-              <v-btn
-                class="consultation__btn pa-10 mt-10"
-                v-bind="attrs"
-                v-on="on"
-              >
-                Получить консультацию
-              </v-btn>
-            </template>
-            <ConsultationForm />
-          </v-dialog>
+        <div class="me__wrapper">
+          <div class="me">
+            <p class="me__description">
+              Профессиональная помощь практикующего психолога
+            </p>
+            <h2 class="me__title">
+              Александра Самойлюка
+            </h2>
+            <p class="me__annotation mt-10">
+              «Мы знаем, кто мы есть, но не знаем,
+              кем мы можем быть.» — Уильям Шекспир
+            </p>
+            <v-dialog
+              v-model="dialog"
+              width="500"
+            >
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  class="consultation__btn pa-10 mt-10"
+                  v-bind="attrs"
+                  v-on="on"
+                >
+                  Получить консультацию
+                </v-btn>
+              </template>
+              <ConsultationForm />
+            </v-dialog>
+          </div>
         </div>
       </v-col>
     </v-row>
@@ -53,9 +55,13 @@
   .container {
     max-width: 1400px !important;
   }
+  .me__wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .me {
-    margin-top: 270px;
-    margin-bottom: 270px;
     text-align: center;
   }
   .consultation__btn {

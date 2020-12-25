@@ -158,7 +158,7 @@
     border-radius: 25px !important;
   }
   ::v-deep .v-counter {
-    color: #47494e;
+    color: #47494e !important;
   }
   .consultation__submit {
     background-color: #37432b;

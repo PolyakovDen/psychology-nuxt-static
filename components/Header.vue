@@ -1,17 +1,29 @@
 <template>
-  <v-app-bar class="main__navigation" color="#1d2417" fixed app elevate-on-scroll>
+  <v-app-bar class="main__navigation" color="#1D2317" fixed app elevate-on-scroll>
     <v-container fluid class="pa-0">
       <div class="d-flex justify-space-between">
         <div class="header">
           <nuxt-link to="/" class="header__logo">
-            Александр Самойлюк
+            ОЛЕКСАНДР САМОЛЮК
           </nuxt-link>
         </div>
         <v-spacer />
         <v-toolbar-items class="hidden-sm-and-down">
-          <v-btn v-scroll-to="item.link" class="toolbar__items pt-2 pb-2" v-for="(item, index) in items" :key="index" text>
+          <v-btn
+            v-for="(item, index) in items"
+            :key="index"
+            v-scroll-to="item.link"
+            class="toolbar__items pt-2 pb-2"
+            text
+          >
             {{ item.title }}
           </v-btn>
+          <a href="https://t.me/dmytroyep" target="_blank" rel="noopener noreferrer">
+            <img src="/telegram.png" alt="Telegram" width="61" height="53">
+          </a>
+          <a href="viber://chat?number=%2B380937390565" target="_blank" rel="noopener noreferrer">
+            <img src="/viber.png" alt="Viber" width="61" height="53">
+          </a>
         </v-toolbar-items>
         <v-menu offset-y transition="slide-x-transition">
           <template v-slot:activator="{ on, attrs }">
@@ -20,7 +32,9 @@
               v-bind="attrs"
               v-on="on"
             >
-              <v-icon size="30">mdi-menu</v-icon>
+              <v-icon size="30">
+                mdi-menu
+              </v-icon>
             </v-btn>
           </template>
           <v-list>
@@ -33,6 +47,12 @@
                 {{ item.title }}
               </v-list-item-title>
             </v-list-item>
+            <a href="https://t.me/dmytroyep" target="_blank" rel="noopener noreferrer">
+              <img src="/telegram.png" alt="Telegram" width="61" height="53">
+            </a>
+            <a href="viber://chat?number=%2B380937390565" target="_blank" rel="noopener noreferrer">
+              <img src="/viber.png" alt="Viber" width="61" height="53">
+            </a>
           </v-list>
         </v-menu>
       </div>
@@ -46,13 +66,11 @@ export default {
   data () {
     return {
       items: [
-        { link:'#main', title: 'Главная' },
-        { link:'#services', title: 'Услуги' },
-        { link:'#footer', title: 'Контакты' }
+        { link: '#main', title: 'Головна' },
+        { link: '#services', title: 'Послуги' },
+        { link: '#footer', title: 'Контакти' }
       ]
     }
-  },
-  mounted() {
   }
 }
 </script>

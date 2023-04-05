@@ -1,38 +1,79 @@
 <template>
   <v-container fluid class="pl-5 pr-5">
-    <h2 class="about-me__title text-center">Почему именно я?</h2>
+    <h2 class="about-me__title text-center">
+      ЧОМУ ВАМ ВАРТО ДОВІРИТИ СВОЮ
+      ПРОБЛЕМУ САМЕ МЕНІ:
+    </h2>
     <div class="about-me d-flex justify-center">
       <div class="about-me--left">
         <div class="about-me__block">
-          <div class="circle" />
-          <p class="about-me--wrapper about-me__wrapper1">1. 100% конфиденциальность закреплена в письменном виде</p>
+          <span class="about-me__number about-me__number1">1</span>
+          <p class="about-me--wrapper about-me__wrapper1">
+            Наявність професійної підготовки в галузі психоаналізу та сексології, а також особистий шлях багаторічної психотерапії.
+          </p>
         </div>
         <div class="about-me__block">
-          <div class="circle circle3" />
-          <p class="about-me--wrapper about-me__wrapper3">3. Практикующий психолог, который лично прошел путь психологической терапии в определенный период жизни</p>
+          <span class="about-me__number about-me__number3">3</span>
+          <p class="about-me--wrapper about-me__wrapper3">
+            Побудова відносин зі своїми клієнтами що базуються на довірі і взаємоповазі, комфортна та етична робота із дотриманням усіх професійних стандартів та норм.
+          </p>
+        </div>
+        <div class="about-me__block">
+          <span class="about-me__number about-me__number5">5</span>
+          <p class="about-me--wrapper about-me__wrapper5">
+            Поточне навчання - Yale University, Department of Psychology, Clinical Psychology
+          </p>
         </div>
       </div>
       <div class="about-me--center">
-        <img src="/21.png" alt="" width="25">
+        <img src="/figure.png" alt="" width="44" height="523">
       </div>
       <div class="about-me--right">
         <div class="about-me__block">
-          <div class="circle circle2" />
-          <p class="about-me--wrapper about-me__wrapper2">2. Индивидуальный формат оценивания проблемы и персонализированный подход к каждому клиенту</p>
+          <p class="about-me--wrapper about-me__wrapper2">
+            Індивідуальний підхід до кожного клієнта, враховуючи його унікальні потреби та особливості.
+          </p>
+          <span class="about-me__number about-me__number2">2</span>
         </div>
         <div class="about-me__block">
-          <div class="circle circle4" />
-          <p class="about-me--wrapper about-me__wrapper4">4. Лояльная ценовая политика, в соответствии с финансовыми возможностями каждого пациента</p>
+          <p class="about-me--wrapper about-me__wrapper4">
+            Удосконалення своїх знань та навичок, участь у семінарах, конференціях та інших професійних заходах.
+          </p>
+          <span class="about-me__number about-me__number4">4</span>
         </div>
       </div>
     </div>
+    <v-dialog
+      v-model="dialog"
+      width="500"
+    >
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          class="consultation__btn pa-10 mt-10"
+          v-bind="attrs"
+          v-on="on"
+        >
+          Проконсультуватися
+        </v-btn>
+      </template>
+      <ConsultationForm />
+    </v-dialog>
   </v-container>
 </template>
 
 <script>
-  export default {
-    name: "AboutMe"
+import ConsultationForm from '~/components/ConsultationForm'
+export default {
+  name: 'AboutMe',
+  components: {
+    ConsultationForm
+  },
+  data () {
+    return {
+      dialog: false
+    }
   }
+}
 </script>
 
 <style scoped>
@@ -40,58 +81,77 @@
     width: 1300px !important;
   }
   .about-me__title {
-    font-size: 30px;
-    color: #37432b;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    color: #1D2317;
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+
+  .about-me__number {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1D2317;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .about-me {
     margin-bottom: 60px;
   }
   .about-me--wrapper {
-    max-width: 400px;
+    max-width: 300px;
     z-index: 1;
-    color: #37432b;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
   }
   .about-me__wrapper1 {
     margin-right: 30px;
+    height: 80px;
+  }
+
+  .about-me__number1 {
+    margin-top: -12px;
   }
   .about-me__wrapper2 {
     margin-left: 50px;
-    margin-top: 100px;
+    margin-top: 115px;
+  }
+
+  .about-me__number2 {
+    margin-top: 90px;
   }
   .about-me__wrapper3 {
-    margin-top: 150px;
+    margin-top: 120px;
+  }
+
+  .about-me__number3 {
+    margin-top: 115px;
   }
   .about-me__wrapper4 {
-    margin-top: 140px;
+    margin-top: 170px;
     margin-left: 50px;
+  }
+
+  .about-me__number4 {
+    margin-top: 150px;
+  }
+
+  .about-me__wrapper5 {
+    margin-top: 170px;
+  }
+
+  .about-me__number5 {
+    margin-top: 145px;
   }
   .about-me__block {
     display: flex;
     position: relative;
-  }
-  .circle {
-    width: 120px;
-    height: 120px;
-    background-color: #dadcd8;
-    border-radius: 50%;
-    position: absolute;
-    top: -35px;
-    left: -50px;
-  }
-  .circle2 {
-    top: 70px;
-    left: 380px;
-  }
-  .circle3 {
-    top: 125px;
-    left: -50px;
-  }
-  .circle4 {
-    top: 120px;
-    left: 280px;
   }
   @media screen and (max-width: 960px) {
     .about-me__wrapper1 {
@@ -103,79 +163,109 @@
     .about-me__wrapper4 {
       margin-left: 15px;
     }
-    .circle2 {
-      left: 300px;
-    }
-  }
-  @media screen and (max-width: 810px) {
-    .circle2 {
-      top: 80px;
-      left: 210px;
-    }
-    .circle4 {
-      top: 90px;
-      left: 260px;
-    }
-    .about-me__wrapper4 {
-      margin-top: 110px;
-    }
   }
   @media screen and (max-width: 715px) {
-    .circle4 {
-      left: 230px;
+    .about-me__number2 {
+      margin-top: 100px;
+    }
+    .about-me__wrapper4 {
+      margin-top: 150px;
+    }
+
+    .about-me__number4 {
+      margin-top: 140px;
+    }
+
+    .about-me__wrapper5 {
+      margin-top: 160px;
+    }
+
+    .about-me__number5 {
+      margin-top: 140px;
+    }
+  }
+  @media screen and (max-width: 670px) {
+    .about-me__wrapper5 {
+      margin-top: 140px;
+    }
+
+    .about-me__number5 {
+      margin-top: 130px;
     }
   }
   @media screen and (max-width: 640px) {
-    .about-me--wrapper {
-      font-size: 14px;
+    .about-me__wrapper5 {
+      margin-top: 130px;
     }
-    .circle {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .about-me__wrapper3 {
+
+    .about-me__number5 {
       margin-top: 120px;
-    }
-  }
-  @media screen and (max-width: 550px) {
-    .about-me__wrapper2 {
-      margin-top: 65px;
-    }
-    .about-me__wrapper3 {
-      margin-top: 80px;
     }
   }
   @media screen and (max-width: 450px) {
+    .about-me--wrapper {
+      font-size: 11px;
+    }
+
+    .about-me__number {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    .about-me__wrapper1 {
+      margin-top: -60px;
+    }
+
+    .about-me__number1 {
+      margin-top: -10px;
+    }
+
     .about-me__wrapper2 {
       margin-top: 80px;
     }
-    .about-me__wrapper3 {
-      margin-top: 120px;
+
+    .about-me__number2 {
+      margin-top: 110px;
     }
-    .about-me__wrapper4 {
-      margin-top: 120px;
-    }
-    .about-me--wrapper {
-      max-width: 160px;
-      font-size: 13px;
-      word-break: break-all;
-    }
-  }
-  @media screen and (max-width: 400px) {
+
     .about-me__wrapper3 {
       margin-top: 90px;
     }
+
+    .about-me__number3 {
+      margin-top: 160px;
+    }
+
     .about-me__wrapper4 {
       margin-top: 90px;
     }
+
+    .about-me__number4 {
+      margin-top: 125px;
+    }
+
+    .about-me__wrapper5 {
+      margin-top: 60px;
+    }
+
+    .about-me__number5 {
+      margin-top: 95px;
+    }
   }
-  @media screen and (max-width: 350px) {
-    .about-me__wrapper3 {
-      margin-top: 70px;
-    }
-    .about-me__wrapper4 {
-      margin-top: 70px;
-    }
+
+  .consultation__btn {
+    margin: auto;
+    display: flex;
+    text-transform: none;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    background-color: #1D2317 !important;
+    border-radius: 50px;
+    margin-bottom: 100px;
+  }
+
+  ::v-deep .v-dialog {
+    border-radius: 25px !important;
   }
 </style>

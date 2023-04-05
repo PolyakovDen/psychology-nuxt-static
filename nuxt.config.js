@@ -4,12 +4,12 @@ export default {
   target: 'static',
 
   head: {
-    titleTemplate: 'Психолог Александр Самойлюк',
-    title: 'Психолог Александр Самойлюк',
+    titleTemplate: 'Психолог Олександр Самолюк',
+    title: 'Психолог Олександр Самолюк',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Психолог Александр Самойлюк, психолог в Киеве, психоанализ, психологическая помощь, консультирование, терапия, паника, депрессия, утрата смысла жизни,  эмоциональная зависимость' }
+      { hid: 'description', name: 'description', content: 'Психолог Олександр Самолюк, психолог в Киеве, психоанализ, психологическая помощь, консультирование, терапия, паника, депрессия, утрата смысла жизни,  эмоциональная зависимость' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -18,7 +18,7 @@ export default {
 
   css: [
     'aos/dist/aos.css',
-    "~/assets/global.css",
+    '~/assets/global.css'
   ],
 
   plugins: [
@@ -29,8 +29,6 @@ export default {
   components: true,
 
   buildModules: [
-    // '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify'
   ],
 

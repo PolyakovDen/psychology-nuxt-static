@@ -1,123 +1,121 @@
 <template>
   <div class="wrapper">
     <v-container fluid class="pl-5 pr-5">
-      <h2 class="stages__title text-center">Этапы работы</h2>
-      <div class="divider" />
-      <div class="stages__items d-flex justify-space-between flex-wrap">
-        <div v-for="(item, index) in items" :key="index" class="stages__item">
-          <button @click="showDescription(item)">
-            <img :src="item.img" alt="" :width="item.width" :height="item.height">
-          </button>
+      <h2 class="stages__title text-center">
+        ЕТАПИ РОБОТИ
+      </h2>
+      <div class="stage__items d-flex justify-space-between flex-wrap">
+        <div class="stage">
+          <span class="stage__number">1</span>
+          <div class="stage__item">
+            <h4 class="stage__title">
+              Зв'яжіться зі мною зручним для вас способом, щоб домовитися про першу консультацію:
+            </h4>
+            <span class="stage__step">
+              - надішліть повідомлення мені в What's App або Telegram
+            </span>
+            <span class="stage__step">
+              - напишіть листа на електронну пошту
+            </span>
+            <span class="stage__step">
+              - заповніть форму зворотного зв'язку на моєму веб-сайті.
+            </span>
+          </div>
+        </div>
+        <div class="stage">
+          <span class="stage__number">2</span>
+          <div class="stage__item">
+            <h4 class="stage__title">
+              Наступним етапом ми визначаємо формат першої консультації:
+            </h4>
+            <span class="stage__step">
+              - особиста зустріч чи онлайн консультація
+            </span>
+          </div>
+        </div>
+        <div class="stage">
+          <span class="stage__number">3</span>
+          <div class="stage__item">
+            <h4 class="stage__title">
+              За результатами першої консультації:
+            </h4>
+            <span class="stage__step">
+              - ми спільно формуємо ваш запит для подальшої роботи
+            </span>
+            <span class="stage__step">
+              - складаємо графік подальших консультацій та терапевтичних кроків.
+            </span>
+          </div>
         </div>
       </div>
-      <div class="mt-12">
-        <img class="stages__arrow" src="/17.png" alt="" width="1500">
-      </div>
-      <p class="stages__description text-center">
-        {{ description }}
-      </p>
     </v-container>
   </div>
 </template>
 
 <script>
-  export default {
-    name: "Stages",
-    data () {
-      return {
-        items: [
-          {
-            img: '10.png',
-            width: 90,
-            height: 90,
-            description: 'Первый контакт, обращение по телефону или по почте'
-          },
-          {
-            img: '11.png',
-            width: 90,
-            height: 90,
-            description: 'Знакомство в формате оффлайн или онлайн консультации, формирование проблемы и определение этапов работы'
-          },
-          {
-            img: '12.png',
-            width: 90,
-            height: 90,
-            description: 'Совместное принятие решения относительно формата дальнейшей работы'
-          },
-          {
-            img: '13.png',
-            width: 90,
-            height: 90,
-            description: 'Создание программы консультирования, разработка методологии и определение порядка внедрения'
-          },
-          {
-            img: '14.png',
-            width: 90,
-            height: 90,
-            description: 'Детальное углубление в процесс, поиск корня проблем и вариантов его решения'
-          },
-          {
-            img: '15.png',
-            width: 90,
-            height: 90,
-            description: 'Практическое внедрение советов и решений в жизни пациента'
-          },
-          {
-            img: '16.png',
-            width: 90,
-            height: 90,
-            description: 'Подведение итогов терапии, анализ и завершение сотрудничества'
-          }
-        ],
-        description: ''
-      }
-    },
-    created () {
-      this.description = this.items[0].description
-    },
-    methods: {
-      showDescription (item) {
-        this.description = ''
-        this.description = item.description;
-      }
-    }
-  }
+export default {
+  name: 'Stages'
+}
 </script>
 
 <style scoped>
   .container {
-    max-width: 1500px !important;
+    max-width: 1200px !important;
   }
   .wrapper {
-    background-color: #e2e5de;
+    background-color: #DDE3D9;
   }
   .stages__title {
-    font-size: 30px;
-    color: #37432b;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #1D2317;
+    margin-top: 90px;
+    margin-bottom: 65px;
   }
-  .divider {
-    width: 400px;
+  .stage__items {
     margin: 0 auto;
-    border-bottom: 2px solid #5c7148;
+    margin-bottom: 120px;
   }
-  .stages__items {
-    max-width: 1300px;
-    margin: 0 auto;
+
+  .stage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
-  .stages__item {
-    margin-top: 50px;
-    margin-right: 10px;
+
+  .stage__number {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1D2317;
+    margin-bottom: 20px;
   }
-  .stages__arrow {
-    width: 100%;
+
+  .stage__item {
+    width: 320px;
+    height: 200px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    padding: 30px 12px 0 12px;
   }
-  .stages__description {
-    font-size: 20px;
-    color: #37432b;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 40px;
+  .stage__title {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  .stage__step {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    display: block;
+    text-align: center;
   }
 </style>

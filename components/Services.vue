@@ -1,8 +1,8 @@
 <template>
   <div id="services" class="wrapper">
     <v-container fluid class="pl-5 pr-5">
-      <h2 class="main__title text-center mt-8">
-        Услуги
+      <h2 class="main__title text-center">
+        ПОСЛУГИ
       </h2>
       <div class="services__cards d-flex justify-space-between flex-wrap mb-16">
         <div v-for="(service, index) in services" :key="index" class="service__card text-center mt-16">
@@ -25,32 +25,32 @@ export default {
     return {
       services: [
         {
-          src: '8.png',
-          width: 70,
-          height: 71,
-          title: 'Индивидуальная терапия',
-          description: 'Лучше всего подойдет для людей, которые встретились с вопросами личной внутренней пустоты, дисбаланса личности или столкнулись с тяжелыми жизненными обстоятельствами. Этот формат предполагает детальную работу от нахождения корня проблемы, к ее полноценного решения'
+          src: '88.png',
+          width: 152,
+          height: 152,
+          title: 'Психоаналітична терапія',
+          description: 'Форма тривалої терапії, яка найкраще допомагає людям зрозуміти та подолати проблеми, пов\'язані з їх психологічними та емоційними станами.'
         },
         {
-          src: '7.png',
-          width: 101,
-          height: 71,
-          title: 'Одноразовая консультация',
-          description: 'Это отличный вариант, если вы сомневаетесь относительно того, какой формат психологической помощи вам нужен, и на сколько глубокая ваша проблема'
+          src: '99.png',
+          width: 129,
+          height: 129,
+          title: 'Разові консультації',
+          description: 'Коротка форма терапії, яка зазвичай триває від кількох сесій до кількох місяців. Може бути використана для вирішення конкретних проблем або отримання підтримки в складних життєвих ситуаціях.'
         },
         {
-          src: '9.png',
-          width: 131,
-          height: 71,
-          title: 'Семейная терапия',
-          description: 'Лучшее решение для супружеских пар если вы переживаете кризисный период в своем браке, семейная терапия это один из инструментов, который поможет найти решение, улучшить сексуальную жизнь, вернуть гармонию и счастье в ваши отношения'
+          src: '101.png',
+          width: 149,
+          height: 149,
+          title: 'Групова терапія',
+          description: 'Форма психоаналітичної терапії, в якій група людей спілкується один з одним, вони діляться своїм досвідом та підтримують один одного у розумінні та подоланні своїх проблем.'
         },
         {
-          src: '8.png',
-          width: 70,
-          height: 71,
-          title: 'Подростковая терапия',
-          description: 'Лучше всего подойдет для людей, которые встретились с вопросами личной внутренней пустоты, дисбаланса личности или столкнулись с тяжелыми жизненными обстоятельствами. Этот формат предполагает детальную работу от нахождения корня проблемы, к ее полноценного решения'
+          src: '102.png',
+          width: 160,
+          height: 160,
+          title: 'Консультації з емоційно-психологічного розвитку',
+          description: 'Психоаналітик може допомогти людям усвідомити свій потенціал та покращити якість свого життя, ґрунтуючись на психоаналітичних принципах.'
         }
       ]
     }
@@ -59,30 +59,40 @@ export default {
 </script>
 
 <style scoped>
-	.container {
-    max-width: 1200px !important;
+.container {
+  max-width: 1200px !important;
+}
+.wrapper {
+  background-color: #dee3da;
+}
+.main__title {
+  margin-top: 88px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #1D2317;
+}
+@media screen and (max-width: 960px) {
+  .services__cards {
+    justify-content: center !important;
   }
-	.wrapper {
-		background-color: #dee3da;
-    /*height: 100vh;*/
-	}
-	.main__title {
-		font-size: 30px;
-	}
-	@media screen and (max-width: 960px) {
-    .services__cards {
-      justify-content: center !important;
-    }
-  }
-	.service__card {
-		width: 450px;
-	}
-	.service__card--title {
-		font-size: 22px;
-	}
-	.service__card--description {
-		width: 350px;
-		margin: 0 auto;
-		font-size: 14px;
-	}
+}
+.service__card {
+  width: 450px;
+}
+.service__card--title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #1D2317;
+}
+.service__card--description {
+  width: 350px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1D2317;
+}
 </style>

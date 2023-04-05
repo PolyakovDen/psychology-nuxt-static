@@ -1,10 +1,11 @@
 <template>
   <div class="wrapper">
     <v-container fluid class="pl-5 pr-5">
-      <v-row no-gutters class="mt-10">
+      <v-row no-gutters class="reasons">
         <v-col cols="12">
           <h2 class="reasons__title text-center">
-            Самые распространенные причины обращения к психологу
+            Кожна людина унікальна, і причини звернення до психоаналітика індивідуальні.
+            Проте, психоаналіз може ефективно допомагати людям у подоланні життєвих труднощів:
           </h2>
         </v-col>
       </v-row>
@@ -33,39 +34,39 @@ export default {
       reasons: [
         {
           img: '1.png',
-          width: 100,
-          height: 82,
-          description: 'Депрессия / тяжелое психологическое состояние'
+          width: 136,
+          height: 87,
+          description: 'Проблеми в особистих відносинах: конфлікти, кризи у шлюбі та відносинах, розлучення, сексуальні проблеми.'
         },
         {
           img: '2.png',
-          width: 98,
-          height: 80,
-          description: 'Потеря близкого человека'
+          width: 136,
+          height: 91,
+          description: 'Проблеми із психологічним здоров\'ям: депресія, тривожність, низька самооцінка.'
         },
         {
           img: '3.png',
-          width: 141,
-          height: 80,
-          description: 'Разорванные брачные отношения'
+          width: 136,
+          height: 86,
+          description: 'Почуття неврозу, страхи та фобії, загальні порушення адаптації у соціумі.'
         },
         {
           img: '4.png',
-          width: 85,
-          height: 80,
-          description: 'Проблемы в семейной жизни'
+          width: 136,
+          height: 90,
+          description: 'Проблеми з роботою, кар\'єрою та перспективами.'
         },
         {
           img: '5.png',
-          width: 128,
-          height: 80,
-          description: 'Не комфортное пребывания в социуме'
+          width: 136,
+          height: 87,
+          description: 'Бажання кращого розуміння себе, своїх емоцій, думок та поведінки для покращення життєвої орієнтації та самоусвідомлення.'
         },
         {
           img: '6.png',
-          width: 116,
-          height: 80,
-          description: 'Страх, переживания, неуверенность'
+          width: 136,
+          height: 81,
+          description: 'Поведінкові проблеми: наркоманія, алкоголізм, розлади харчової поведінки.'
         }
       ]
     }
@@ -81,8 +82,14 @@ export default {
     background-color: #5c7148;
     color: white;
   }
+
+  .reasons {
+    margin-top: 88px;
+  }
   .reasons__title {
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
   }
   .divider {
     border-bottom: 2px solid white;
@@ -94,9 +101,12 @@ export default {
     max-width: 200px;
   }
   .reason__card--description {
-    margin-top: 50px;
+    margin-top: 16px;
     margin-bottom: 40px;
     text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
   }
   @media screen and (max-width: 500px) {
     .reasons__cards {

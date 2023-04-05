@@ -15,8 +15,9 @@ export default {
 </script>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
   .default {
-    font-family: 'Franklin Gothic Medium', 'Roboto', sans-serif;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
     background-color: white;
     overflow-x: hidden;
     color: black;

@@ -2,29 +2,25 @@
   <div id="footer" class="wrapper">
     <v-container fluid class="pl-5 pr-5">
       <div class="footer d-flex justify-space-between flex-wrap mt-16 mb-10">
-        <div class="footer__my-contacts">
-          <h3 class="footer__my-contacts--title">Александр Самойлюк</h3>
-          <p class="footer__my-contacts--contacts mt-3">КОНТАКТЫ</p>
-          <p class="footer__my-contacts--city">м. Киев, Подол</p>
-          <p class="footer__my-contacts--metro">м. Контрактовая площа</p>
-          <p class="footer__my-contacts--street">вул. Хорива 25,</p>
-          <p class="footer__my-contacts--organization">ПСИпространство "Practica"</p>
-        </div>
-        <div class="footer__my-social">
-          <ul class="footer__my-social--list">
-            <li class="footer__my-social--item d-flex mt-3">
-              <img class="my-social--img mb-5" src="/18.png" alt="Instagram" width="30" height="30">
-              <a class="my-social--link ml-4" href="#">www.Instagram.com</a>
-            </li>
-            <li class="footer__my-social--item d-flex">
-              <img class="my-social--img mb-5" src="/19.png" alt="Facebook" width="30" height="30">
-              <a class="my-social--link ml-4" href="#">www.Facebook.com</a>
-            </li>
-            <li class="footer__my-social--item d-flex">
-              <img class="my-social--img" src="/20.png" alt="Telephone" width="30" height="25">
-              <p class="my-social--number ml-4">9999999999</p>
-            </li>
-          </ul>
+        <img src="/footer.png" alt="Олександр Самолюк" width="235" height="209">
+        <div class="footer__my-contacts d-flex flex-column">
+          <h3 class="footer__my-contacts--title">
+            Олександр Самолюк
+          </h3>
+          <p class="footer__my-contacts--contacts mt-3">
+            Контактна інформація:
+          </p>
+          <div class="pl-2 d-flex align-center">
+            <img src="/email.png" alt="Email" width="29" height="29">
+            <span class="footer__my-contacts__desc pl-3">aleks.samolyuk@gmail.com</span>
+          </div>
+          <a href="https://t.me/dmytroyep" target="_blank" rel="noopener noreferrer" class="d-flex align-center">
+            <img src="/telegram.png" alt="Telegram" width="48" height="42">
+            <span class="footer__my-contacts__desc">@OleksandrSam</span>
+          </a>
+          <a href="viber://chat?number=%2B380937390565" target="_blank" rel="noopener noreferrer">
+            <img src="/viber.png" alt="Viber" width="48" height="42">
+          </a>
         </div>
       </div>
     </v-container>
@@ -33,7 +29,7 @@
 
 <script>
 export default {
-name: "Footer.vue"
+  name: 'FooterVue'
 }
 </script>
 
@@ -42,8 +38,27 @@ name: "Footer.vue"
     width: 700px !important;
   }
   .wrapper {
-    background-color: #1f2719;
+    background-color: #1D2317;
     color: white;
+  }
+
+  .footer__my-contacts--title {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .footer__my-contacts__desc {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    text-decoration: none;
   }
   .footer__my-contacts--city,
   .footer__my-contacts--metro,

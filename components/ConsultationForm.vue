@@ -3,15 +3,15 @@
     <div class="form">
       <v-form
         ref="form"
-        name="formPost"
         v-model="valid"
+        name="formPost"
         lazy-validation
         method="POST"
         action="/success"
         data-netlify="true"
         class="consultation__form--block"
       >
-        <input type="hidden" name="form-name" value="formPost" />
+        <input type="hidden" name="form-name" value="formPost">
         <v-container>
           <v-row justify="center" class="pa-2">
             <v-col
@@ -68,10 +68,10 @@
                 elevation="20"
                 block
                 class="consultation__submit mr-4"
-                @click="validate"
                 type="submit"
                 outlined
                 rounded
+                @click="validate"
               >
                 Отправить
               </v-btn>
@@ -84,34 +84,34 @@
 </template>
 
 <script>
-  export default {
-    name: "ConsultationForm",
-    data () {
-      return {
-        valid: true,
-        name: '',
-        nameRules: [
-          v => !!v || 'Заполните имя пожалуйста',
-          v => (v && v.length <= 10) || 'Имя должно быть меньше 10 символов'
-        ],
-        email: '',
-        emailRules: [
-          v => !!v || 'Заполните E-mail пожалуйста',
-          v => /.+@.+\..+/.test(v) || 'E-mail должен быть формата: test@test.com'
-        ],
-        number: '',
-        numberRules: [
-          v => !!v || 'Заполните телефон пожалуйста'
-        ],
-        annotation: ''
-      }
-    },
-    methods: {
-      validate () {
-        this.$refs.form.validate()
-      }
+export default {
+  name: 'ConsultationForm',
+  data () {
+    return {
+      valid: true,
+      name: '',
+      nameRules: [
+        v => !!v || 'Заполните имя пожалуйста',
+        v => (v && v.length <= 10) || 'Имя должно быть меньше 10 символов'
+      ],
+      email: '',
+      emailRules: [
+        v => !!v || 'Заполните E-mail пожалуйста',
+        v => /.+@.+\..+/.test(v) || 'E-mail должен быть формата: test@test.com'
+      ],
+      number: '',
+      numberRules: [
+        v => !!v || 'Заполните телефон пожалуйста'
+      ],
+      annotation: ''
+    }
+  },
+  methods: {
+    validate () {
+      this.$refs.form.validate()
     }
   }
+}
 </script>
 
 <style scoped>

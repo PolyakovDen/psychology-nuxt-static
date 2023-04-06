@@ -5,10 +5,10 @@
         <img src="/footer.png" alt="Олександр Самолюк" width="235" height="209">
         <div class="footer__my-contacts d-flex flex-column">
           <h3 class="footer__my-contacts--title">
-            Олександр Самолюк
+            {{ $t('53') }}
           </h3>
           <p class="footer__my-contacts--contacts mt-3">
-            Контактна інформація:
+            {{ $t('54') }}
           </p>
           <div class="pl-2 d-flex align-center">
             <img src="/email.png" alt="Email" width="29" height="29">

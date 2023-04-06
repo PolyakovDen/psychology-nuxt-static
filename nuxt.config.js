@@ -33,6 +33,32 @@ export default {
   ],
 
   modules: [
+    [
+      '@nuxtjs/i18n',
+      {
+        locales: [
+          {
+            code: 'uk',
+            name: 'Ukraine'
+          },
+          {
+            code: 'ru',
+            name: 'Russian'
+          },
+        ],
+        defaultLocale: 'uk',
+        switchLocalePath: '/:lang/:route',
+        setLocaleCookie: true,
+        getLocaleCookie: 'i18n_loc',
+        vueI18n: {
+          fallbackLocale: 'uk',
+          messages: {
+            uk: require('./locales/uk.json'),
+            ru: require('./locales/ru.json')
+          }
+        }
+      }
+    ]
   ],
 
   vuetify: {

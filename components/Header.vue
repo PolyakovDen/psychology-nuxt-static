@@ -1,14 +1,14 @@
 <template>
   <v-app-bar class="main__navigation" color="#1D2317" fixed app elevate-on-scroll>
     <v-container fluid class="pa-0">
-      <div class="d-flex justify-space-between">
+      <div class="d-flex justify-space-between align-center">
         <div class="header">
           <nuxt-link to="/" class="header__logo">
-            ОЛЕКСАНДР САМОЛЮК
+            {{ $t('1') }}
           </nuxt-link>
         </div>
         <v-spacer />
-        <v-toolbar-items class="hidden-sm-and-down">
+        <v-toolbar-items class="hidden-sm-and-down d-flex align-center">
           <v-btn
             v-for="(item, index) in items"
             :key="index"
@@ -25,6 +25,12 @@
             <img src="/viber.png" alt="Viber" width="61" height="53">
           </a>
         </v-toolbar-items>
+        <v-select
+          v-model="language"
+          class="language-selector"
+          :items="['UA', 'RU']"
+          @change="changeLanguage()"
+        />
         <v-menu offset-y transition="slide-x-transition">
           <template v-slot:activator="{ on, attrs }">
             <v-btn
@@ -66,10 +72,19 @@ export default {
   data () {
     return {
       items: [
-        { link: '#main', title: 'Головна' },
-        { link: '#services', title: 'Послуги' },
-        { link: '#footer', title: 'Контакти' }
-      ]
+        { link: '#main', title: this.$t('2') },
+        { link: '#services', title: this.$t('3') },
+        { link: '#footer', title: this.$t('4') }
+      ],
+      language: ''
+    }
+  },
+  created () {
+    this.$i18n.locale === 'uk' ? this.language = 'UA' : this.language = 'RU'
+  },
+  methods: {
+    changeLanguage () {
+      this.language === 'UA' ? this.$router.replace(this.switchLocalePath('uk')) : this.$router.replace(this.switchLocalePath('ru'))
     }
   }
 }
@@ -105,5 +120,10 @@ export default {
   }
   ::v-deep .v-list {
     background-color: #5c7148 !important;
+  }
+
+  .language-selector {
+    max-width: 60px !important;
+    margin-top: 10px;
   }
 </style>

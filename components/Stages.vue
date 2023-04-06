@@ -2,23 +2,23 @@
   <div class="wrapper">
     <v-container fluid class="pl-5 pr-5">
       <h2 class="stages__title text-center">
-        ЕТАПИ РОБОТИ
+        {{ $t('36') }}
       </h2>
       <div class="stage__items d-flex justify-space-between flex-wrap">
         <div class="stage">
           <span class="stage__number">1</span>
           <div class="stage__item">
             <h4 class="stage__title">
-              Зв'яжіться зі мною зручним для вас способом, щоб домовитися про першу консультацію:
+              {{ $t('37') }}
             </h4>
             <span class="stage__step">
-              - надішліть повідомлення мені в What's App або Telegram
+              {{ $t('38') }}
             </span>
             <span class="stage__step">
-              - напишіть листа на електронну пошту
+              {{ $t('39') }}
             </span>
             <span class="stage__step">
-              - заповніть форму зворотного зв'язку на моєму веб-сайті.
+              {{ $t('40') }}
             </span>
           </div>
         </div>
@@ -26,10 +26,10 @@
           <span class="stage__number">2</span>
           <div class="stage__item">
             <h4 class="stage__title">
-              Наступним етапом ми визначаємо формат першої консультації:
+              {{ $t('41') }}
             </h4>
             <span class="stage__step">
-              - особиста зустріч чи онлайн консультація
+              {{ $t('42') }}
             </span>
           </div>
         </div>
@@ -37,13 +37,13 @@
           <span class="stage__number">3</span>
           <div class="stage__item">
             <h4 class="stage__title">
-              За результатами першої консультації:
+              {{ $t('43') }}
             </h4>
             <span class="stage__step">
-              - ми спільно формуємо ваш запит для подальшої роботи
+              {{ $t('44') }}
             </span>
             <span class="stage__step">
-              - складаємо графік подальших консультацій та терапевтичних кроків.
+              {{ $t('45') }}
             </span>
           </div>
         </div>

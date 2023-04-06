@@ -1,27 +1,26 @@
 <template>
   <v-container fluid class="pl-5 pr-5">
     <h2 class="about-me__title text-center">
-      ЧОМУ ВАМ ВАРТО ДОВІРИТИ СВОЮ
-      ПРОБЛЕМУ САМЕ МЕНІ:
+      {{ $t('46') }}
     </h2>
     <div class="about-me d-flex justify-center">
       <div class="about-me--left">
         <div class="about-me__block">
           <span class="about-me__number about-me__number1">1</span>
           <p class="about-me--wrapper about-me__wrapper1">
-            Наявність професійної підготовки в галузі психоаналізу та сексології, а також особистий шлях багаторічної психотерапії.
+            {{ $t('47') }}
           </p>
         </div>
         <div class="about-me__block">
           <span class="about-me__number about-me__number3">3</span>
           <p class="about-me--wrapper about-me__wrapper3">
-            Побудова відносин зі своїми клієнтами що базуються на довірі і взаємоповазі, комфортна та етична робота із дотриманням усіх професійних стандартів та норм.
+            {{ $t('48') }}
           </p>
         </div>
         <div class="about-me__block">
           <span class="about-me__number about-me__number5">5</span>
           <p class="about-me--wrapper about-me__wrapper5">
-            Поточне навчання - Yale University, Department of Psychology, Clinical Psychology
+            {{ $t('49') }}
           </p>
         </div>
       </div>
@@ -31,13 +30,13 @@
       <div class="about-me--right">
         <div class="about-me__block">
           <p class="about-me--wrapper about-me__wrapper2">
-            Індивідуальний підхід до кожного клієнта, враховуючи його унікальні потреби та особливості.
+            {{ $t('50') }}
           </p>
           <span class="about-me__number about-me__number2">2</span>
         </div>
         <div class="about-me__block">
           <p class="about-me--wrapper about-me__wrapper4">
-            Удосконалення своїх знань та навичок, участь у семінарах, конференціях та інших професійних заходах.
+            {{ $t('51') }}
           </p>
           <span class="about-me__number about-me__number4">4</span>
         </div>
@@ -53,7 +52,7 @@
           v-bind="attrs"
           v-on="on"
         >
-          Проконсультуватися
+          {{ $t('52') }}
         </v-btn>
       </template>
       <ConsultationForm />

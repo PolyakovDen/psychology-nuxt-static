@@ -2,7 +2,7 @@
   <div id="services" class="wrapper">
     <v-container fluid class="pl-5 pr-5">
       <h2 class="main__title text-center">
-        ПОСЛУГИ
+        {{ $t('16') }}
       </h2>
       <div class="services__cards d-flex justify-space-between flex-wrap mb-16">
         <div v-for="(service, index) in services" :key="index" class="service__card text-center mt-16">
@@ -28,29 +28,29 @@ export default {
           src: '88.png',
           width: 152,
           height: 152,
-          title: 'Психоаналітична терапія',
-          description: 'Форма тривалої терапії, яка найкраще допомагає людям зрозуміти та подолати проблеми, пов\'язані з їх психологічними та емоційними станами.'
+          title: this.$t('17'),
+          description: this.$t('18')
         },
         {
           src: '99.png',
           width: 129,
           height: 129,
-          title: 'Разові консультації',
-          description: 'Коротка форма терапії, яка зазвичай триває від кількох сесій до кількох місяців. Може бути використана для вирішення конкретних проблем або отримання підтримки в складних життєвих ситуаціях.'
+          title: this.$t('19'),
+          description: this.$t('20')
         },
         {
           src: '101.png',
           width: 149,
           height: 149,
-          title: 'Групова терапія',
-          description: 'Форма психоаналітичної терапії, в якій група людей спілкується один з одним, вони діляться своїм досвідом та підтримують один одного у розумінні та подоланні своїх проблем.'
+          title: this.$t('21'),
+          description: this.$t('22')
         },
         {
           src: '102.png',
           width: 160,
           height: 160,
-          title: 'Консультації з емоційно-психологічного розвитку',
-          description: 'Психоаналітик може допомогти людям усвідомити свій потенціал та покращити якість свого життя, ґрунтуючись на психоаналітичних принципах.'
+          title: this.$t('23'),
+          description: this.$t('24')
         }
       ]
     }

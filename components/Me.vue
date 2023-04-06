@@ -5,13 +5,13 @@
         <div class="me__wrapper">
           <div class="me">
             <p class="me__description">
-              Професійна допомога практикуючого психоаналітика
+              {{ $t('5') }}
             </p>
             <h2 class="me__title">
-              ОЛЕКСАНДРА САМОЛЮКА
+              {{ $t('6') }}
             </h2>
             <p class="me__annotation mt-10">
-              "По-справжньому зрозуміти можна лише те, що намагаєшся змінити." Курт Левін
+              {{ $t('7') }}
             </p>
             <v-dialog
               v-model="dialog"
@@ -23,7 +23,7 @@
                   v-bind="attrs"
                   v-on="on"
                 >
-                  Отримати консультацію
+                  {{ $t('8') }}
                 </v-btn>
               </template>
               <ConsultationForm />

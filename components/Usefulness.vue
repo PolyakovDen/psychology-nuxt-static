@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="pl-5 pr-5">
     <h2 class="usefulness__title text-center">
-      КОМУ КОРИСНІ МОЇ ПОСЛУГИ:
+      {{ $t('25') }}
     </h2>
     <div class="usefulness__cards">
       <div v-for="(item, index) in usefulness" :key="index" class="usefulness__card pt-6 pl-4 pr-4 pb-16">
@@ -25,28 +25,28 @@ export default {
     return {
       usefulness: [
         {
-          title: 'ЧОЛОВІКАМ/ЖІНКАМ',
-          description: 'які страждають на депресію, тривожність або інші психічні та психосоматичні розлади, такі як болі в шлунку, алергії, мігрені та інші проблеми, пов\'язані з фізичними проявами стресу.',
+          title: this.$t('26'),
+          description: this.$t('27'),
           number: 1
         },
         {
-          title: 'ПАРАМ',
-          description: 'які стикаються з проблемами у відносинах, конфліктами, кризами, складнощами з близькістю та прихильністю.',
+          title: this.$t('28'),
+          description: this.$t('29'),
           number: 2
         },
         {
-          title: 'ЧОЛОВІКАМ/ЖІНКАМ',
-          description: 'які страждають від проблем із самооцінкою або низькою самооцінкою, що можуть перешкоджати досягненню їх цілей та бажань, а також адаптації в соціумі.',
+          title: this.$t('30'),
+          description: this.$t('31'),
           number: 3
         },
         {
-          title: 'БАТЬКАМ ПІДЛІТКІВ',
-          description: 'які зіткнулися з новим періодом дорослішання дитини, і не знають, як правильно взаємодіяти з дитиною в цей життєвий період.',
+          title: this.$t('32'),
+          description: this.$t('33'),
           number: 4
         },
         {
-          title: 'ЛЮДЯМ',
-          description: 'які зіткнулися з травматичними подіями під час війни, тратили опору, життєвий сенс, чи переосмислюють загальнолюдські цінності. Ті, хто відчув сильний стрес і емоційні переживання та адаптується до нового середовища та умов життя.',
+          title: this.$t('34'),
+          description: this.$t('35'),
           number: 5
         }
       ]
@@ -80,7 +80,7 @@ export default {
   border-radius: 30px;
   margin-top: 40px;
   width: 200px;
-  height: 310px;
+  height: 330px;
   display: flex;
   flex-direction: column;
   background-color: #5c7148;

@@ -5,7 +5,7 @@
         {{ $t('36') }}
       </h2>
       <div class="stage__items d-flex justify-space-between flex-wrap">
-        <div class="stage">
+        <div class="stage" data-aos="fade-up" data-aos-delay="200">
           <span class="stage__number">1</span>
           <div class="stage__item">
             <h4 class="stage__title">
@@ -22,7 +22,7 @@
             </span>
           </div>
         </div>
-        <div class="stage">
+        <div class="stage" data-aos="fade-up" data-aos-delay="300">
           <span class="stage__number">2</span>
           <div class="stage__item">
             <h4 class="stage__title">
@@ -33,7 +33,7 @@
             </span>
           </div>
         </div>
-        <div class="stage">
+        <div class="stage" data-aos="fade-up" data-aos-delay="400">
           <span class="stage__number">3</span>
           <div class="stage__item">
             <h4 class="stage__title">

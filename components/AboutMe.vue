@@ -5,19 +5,19 @@
     </h2>
     <div class="about-me d-flex justify-center">
       <div class="about-me--left">
-        <div class="about-me__block">
+        <div class="about-me__block" data-aos="fade-up" data-aos-delay="100">
           <span class="about-me__number about-me__number1">1</span>
           <p class="about-me--wrapper about-me__wrapper1">
             {{ $t('47') }}
           </p>
         </div>
-        <div class="about-me__block">
+        <div class="about-me__block" data-aos="fade-up" data-aos-delay="200">
           <span class="about-me__number about-me__number3">3</span>
           <p class="about-me--wrapper about-me__wrapper3">
             {{ $t('48') }}
           </p>
         </div>
-        <div class="about-me__block">
+        <div class="about-me__block" data-aos="fade-up" data-aos-delay="300">
           <span class="about-me__number about-me__number5">5</span>
           <p class="about-me--wrapper about-me__wrapper5">
             {{ $t('49') }}
@@ -27,14 +27,15 @@
       <div class="about-me--center">
         <img src="/figure.png" alt="" width="44" height="523">
       </div>
+
       <div class="about-me--right">
-        <div class="about-me__block">
+        <div class="about-me__block" data-aos="fade-up" data-aos-delay="150">
           <p class="about-me--wrapper about-me__wrapper2">
             {{ $t('50') }}
           </p>
           <span class="about-me__number about-me__number2">2</span>
         </div>
-        <div class="about-me__block">
+        <div class="about-me__block" data-aos="fade-up" data-aos-delay="250">
           <p class="about-me--wrapper about-me__wrapper4">
             {{ $t('51') }}
           </p>

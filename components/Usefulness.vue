@@ -5,13 +5,13 @@
     </h2>
     <div class="usefulness__cards">
       <div v-for="(item, index) in usefulness" :key="index" class="usefulness__card pt-6 pl-4 pr-4 pb-16">
-        <div class="usefulness__card--title-wrapper">
+        <div class="usefulness__card--title-wrapper" data-aos="fade-up" :data-aos-delay="item.delay">
           <h3 class="usefulness__card--title text-center">
             {{ item.title }}
           </h3>
         </div>
         <div class="divider mt-4 mb-4" />
-        <p class="usefulness__card--description">
+        <p class="usefulness__card--description" data-aos="fade-up" :data-aos-delay="item.delay + 20">
           {{ item.description }}
         </p>
       </div>
@@ -27,27 +27,32 @@ export default {
         {
           title: this.$t('26'),
           description: this.$t('27'),
-          number: 1
+          number: 1,
+          delay: 100
         },
         {
           title: this.$t('28'),
           description: this.$t('29'),
-          number: 2
+          number: 2,
+          delay: 150
         },
         {
           title: this.$t('30'),
           description: this.$t('31'),
-          number: 3
+          number: 3,
+          delay: 200
         },
         {
           title: this.$t('32'),
           description: this.$t('33'),
-          number: 4
+          number: 4,
+          delay: 250
         },
         {
           title: this.$t('34'),
           description: this.$t('35'),
-          number: 5
+          number: 5,
+          delay: 250
         }
       ]
     }

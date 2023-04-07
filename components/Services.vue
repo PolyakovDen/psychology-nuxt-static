@@ -6,11 +6,18 @@
       </h2>
       <div class="services__cards d-flex justify-space-between flex-wrap mb-16">
         <div v-for="(service, index) in services" :key="index" class="service__card text-center mt-16">
-          <img :src="service.src" alt="" :width="service.width" :height="service.height">
-          <h3 class="service__card--title mt-3">
+          <img
+            :src="service.src"
+            alt=""
+            :width="service.width"
+            :height="service.height"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+          <h3 class="service__card--title mt-3" data-aos="fade-up" data-aos-delay="400">
             {{ service.title }}
           </h3>
-          <p class="service__card--description mt-3">
+          <p class="service__card--description mt-3" data-aos="fade-up" data-aos-delay="400">
             {{ service.description }}
           </p>
         </div>

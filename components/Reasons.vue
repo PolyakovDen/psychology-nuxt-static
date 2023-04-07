@@ -15,8 +15,16 @@
       </v-row>
       <div class="reasons__cards d-flex justify-space-between flex-wrap">
         <div v-for="(reason, index) in reasons" :key="index" class="reason__card">
-          <img class="reason__card--img" :src="reason.img" alt="" :width="reason.width" :height="reason.height">
-          <p class="reason__card--description">
+          <img
+            class="reason__card--img"
+            :src="reason.img"
+            alt=""
+            :width="reason.width"
+            :height="reason.height"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+          <p class="reason__card--description" data-aos="fade-up" data-aos-delay="400">
             {{ reason.description }}
           </p>
         </div>

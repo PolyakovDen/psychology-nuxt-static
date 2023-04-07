@@ -21,8 +21,8 @@
           <a href="https://t.me/OleksandrSam" target="_blank" rel="noopener noreferrer">
             <img src="/telegram.png" alt="Telegram" width="61" height="53">
           </a>
-          <a href="viber://chat?number=%2B380937390565" target="_blank" rel="noopener noreferrer">
-            <img src="/viber.png" alt="Viber" width="61" height="53">
+          <a href="https://wa.me/15616483976" target="_blank" rel="noopener noreferrer">
+            <img src="/viber.png" alt="WhatsApp" width="61" height="53">
           </a>
         </v-toolbar-items>
         <v-select

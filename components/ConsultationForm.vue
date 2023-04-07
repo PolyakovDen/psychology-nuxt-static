@@ -11,7 +11,7 @@
       >
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://https://psychology-kiev.netlify.app/thanks">
+        <input type="hidden" name="_next" value="https://psychology-kiev.netlify.app/thanks">
         <v-container>
           <v-row justify="center" class="pa-2">
             <v-col

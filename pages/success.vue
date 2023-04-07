@@ -2,16 +2,18 @@
   <v-container fluid fill-height class="success--page">
     <v-row justify="center" align="center">
       <v-col lg="7" md="8" sm="10">
-        <div class="success__messages pt-10 pb-10">
+        <div class="success__messages pa-10">
+          <h2 class="text-center success__messages--title">
+            {{ $t('65') }}
+          </h2>
           <p class="text-center success__messages--text">
-            Спасибо за ваше обращение.
+            {{ $t('66') }}
           </p>
-          <p class="text-center success__messages--text">
-            Я свяжусь с вами в ближайшее время!
-          </p>
-          <nuxt-link class="link__home pl-10" to="/">
-            <span class="link__home--back">Вернуться на главную</span>
-          </nuxt-link>
+          <v-btn block color="primary" variant="plain" class="mt-10">
+            <nuxt-link class="link__home" to="/">
+              {{ $t('67') }}
+            </nuxt-link>
+          </v-btn>
         </div>
       </v-col>
     </v-row>
@@ -36,13 +38,11 @@ export default {
     line-height: 20px;
   }
   .success__messages--text {
-    font-size: 21px;
+    margin-top: 20px !important;
+    font-size: 14px;
   }
   .link__home {
     text-decoration: none;
     color: white;
-  }
-  .link__home:hover .link__home--back {
-    color: blueviolet;
   }
 </style>

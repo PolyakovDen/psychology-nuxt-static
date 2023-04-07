@@ -3,7 +3,7 @@
     <v-row no-gutters>
       <v-col cols="12" lg="5" md="7" sm="12">
         <div class="me__wrapper">
-          <div class="me" data-aos="fade-up" data-aos-delay="300">
+          <div class="me">
             <p class="me__description">
               {{ $t('5') }}
             </p>
@@ -29,7 +29,7 @@
               <ConsultationForm />
             </v-dialog>
           </div>
-          <img src="/main.png" alt="Oleksandr" class="me__image" data-aos="zoom-in" data-aos-delay="500">
+          <img src="/main.png" alt="Oleksandr" class="me__image">
         </div>
       </v-col>
     </v-row>

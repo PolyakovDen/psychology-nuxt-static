@@ -1,7 +1,7 @@
 <template>
   <div id="footer" class="wrapper">
     <v-container fluid class="pl-5 pr-5">
-      <div class="footer d-flex justify-space-between flex-wrap mt-16 mb-10" data-aos="fade-up" data-aos-delay="200">
+      <div class="footer d-flex justify-space-between flex-wrap mt-16 mb-10">
         <img src="/footer.png" alt="Олександр Самолюк" width="235" height="209">
         <div class="footer__my-contacts d-flex flex-column">
           <h3 class="footer__my-contacts--title">

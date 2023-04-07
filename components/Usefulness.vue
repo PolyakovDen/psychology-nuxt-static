@@ -5,13 +5,13 @@
     </h2>
     <div class="usefulness__cards">
       <div v-for="(item, index) in usefulness" :key="index" class="usefulness__card pt-6 pl-4 pr-4 pb-16">
-        <div class="usefulness__card--title-wrapper" data-aos="fade-up" :data-aos-delay="item.delay">
+        <div class="usefulness__card--title-wrapper">
           <h3 class="usefulness__card--title text-center">
             {{ item.title }}
           </h3>
         </div>
         <div class="divider mt-4 mb-4" />
-        <p class="usefulness__card--description" data-aos="fade-up" :data-aos-delay="item.delay + 20">
+        <p class="usefulness__card--description">
           {{ item.description }}
         </p>
       </div>

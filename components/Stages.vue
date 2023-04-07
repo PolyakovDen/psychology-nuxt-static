@@ -22,7 +22,7 @@
             </span>
           </div>
         </div>
-        <div class="stage" data-aos="fade-up" data-aos-delay="300">
+        <div class="stage">
           <span class="stage__number">2</span>
           <div class="stage__item">
             <h4 class="stage__title">
@@ -33,7 +33,7 @@
             </span>
           </div>
         </div>
-        <div class="stage" data-aos="fade-up" data-aos-delay="400">
+        <div class="stage">
           <span class="stage__number">3</span>
           <div class="stage__item">
             <h4 class="stage__title">

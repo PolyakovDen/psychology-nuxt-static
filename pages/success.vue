@@ -3,9 +3,15 @@
     <v-row justify="center" align="center">
       <v-col lg="7" md="8" sm="10">
         <div class="success__messages pt-10 pb-10">
-          <p class="text-center success__messages--text">Спасибо за ваше обращение.</p>
-          <p class="text-center success__messages--text">Я свяжусь с вами в ближайшее время!</p>
-          <nuxt-link class="link__home pl-10" to="/"><span class="link__home--back"><</span> Вернуться на главную</nuxt-link>
+          <p class="text-center success__messages--text">
+            Спасибо за ваше обращение.
+          </p>
+          <p class="text-center success__messages--text">
+            Я свяжусь с вами в ближайшее время!
+          </p>
+          <nuxt-link class="link__home pl-10" to="/">
+            <span class="link__home--back">Вернуться на главную</span>
+          </nuxt-link>
         </div>
       </v-col>
     </v-row>
@@ -13,9 +19,9 @@
 </template>
 
 <script>
-  export default {
-    name: "success"
-  }
+export default {
+  name: 'Success'
+}
 </script>
 
 <style scoped>

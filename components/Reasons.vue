@@ -24,7 +24,11 @@
             data-aos="fade-up"
             data-aos-delay="300"
           >
-          <p class="reason__card--description">
+          <p
+            class="reason__card--description"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             {{ reason.description }}
           </p>
         </div>

@@ -3,7 +3,7 @@
     <v-row no-gutters>
       <v-col cols="12" lg="5" md="7" sm="12">
         <div class="me__wrapper">
-          <div class="me">
+          <div class="me" data-aos="fade-right" data-aos-duration="400">
             <p class="me__description">
               {{ $t('5') }}
             </p>
@@ -29,7 +29,7 @@
               <ConsultationForm />
             </v-dialog>
           </div>
-          <img src="/main.png" alt="Oleksandr" class="me__image">
+          <img src="/main.png" alt="Oleksandr" class="me__image" data-aos="zoom-in-up" data-aos-duration="600">
         </div>
       </v-col>
     </v-row>
@@ -108,7 +108,7 @@ export default {
 
   @media screen and (max-width: 960px) {
     .me__image {
-      opacity: .7;
+      opacity: .7 !important;
     }
   }
 </style>

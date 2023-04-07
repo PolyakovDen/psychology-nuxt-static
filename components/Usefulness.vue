@@ -4,7 +4,7 @@
       {{ $t('25') }}
     </h2>
     <div class="usefulness__cards">
-      <div v-for="(item, index) in usefulness" :key="index" class="usefulness__card pt-6 pl-4 pr-4 pb-16">
+      <div v-for="(item, index) in usefulness" :key="index" class="usefulness__card pt-6 pl-4 pr-4 pb-16" data-aos="flip-right" data-aos-delay="300">
         <div class="usefulness__card--title-wrapper">
           <h3 class="usefulness__card--title text-center">
             {{ item.title }}

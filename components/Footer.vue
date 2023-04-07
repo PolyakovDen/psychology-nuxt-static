@@ -14,12 +14,12 @@
             <img src="/email.png" alt="Email" width="29" height="29">
             <span class="footer__my-contacts__desc pl-3">aleks.samolyuk@gmail.com</span>
           </div>
-          <a href="https://t.me/dmytroyep" target="_blank" rel="noopener noreferrer" class="d-flex align-center">
+          <a href="https://t.me/OleksandrSam" target="_blank" rel="noopener noreferrer" class="d-flex align-center">
             <img src="/telegram.png" alt="Telegram" width="48" height="42">
             <span class="footer__my-contacts__desc">@OleksandrSam</span>
           </a>
-          <a href="viber://chat?number=%2B380937390565" target="_blank" rel="noopener noreferrer">
-            <img src="/viber.png" alt="Viber" width="48" height="42">
+          <a href="https://wa.me/15616483976" target="_blank" rel="noopener noreferrer">
+            <img src="/viber.png" alt="WhatsApp" width="48" height="42">
           </a>
         </div>
       </div>

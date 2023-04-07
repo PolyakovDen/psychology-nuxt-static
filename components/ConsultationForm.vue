@@ -15,7 +15,7 @@
         <v-container>
           <v-row justify="center" class="pa-2">
             <v-col
-              class="test pa-8 pb-3"
+              class="test pa-4 pb-2"
               cols="12"
             >
               <v-text-field
@@ -23,7 +23,7 @@
                 name="name"
                 :counter="10"
                 :rules="nameRules"
-                label="Ваше имя"
+                :label="$t('55')"
                 required
                 class="consultation__field"
                 outlined
@@ -41,11 +41,18 @@
                 rounded
                 background-color="#cad7bf"
               />
+              <v-radio-group v-model="messenger" inline class="messenger">
+                <template v-slot:label>
+                  <div>{{ $t('58') }}</div>
+                </template>
+                <v-radio label="Telegram" value="Telegram" />
+                <v-radio label="WhatsApp" value="WhatsApp" />
+              </v-radio-group>
               <v-text-field
                 v-model="number"
                 name="number"
                 :rules="numberRules"
-                label="Номер телефона"
+                :label="$t('56')"
                 required
                 class="consultation__field"
                 outlined
@@ -55,7 +62,7 @@
               <v-textarea
                 v-model="annotation"
                 name="annotation"
-                label="Примечание"
+                :label="$t('57')"
                 auto-grow
                 required
                 class="consultation__field"
@@ -73,7 +80,7 @@
                 rounded
                 @click="validate"
               >
-                Отправить
+                {{ $t('59') }}
               </v-btn>
             </v-col>
           </v-row>
@@ -91,19 +98,20 @@ export default {
       valid: true,
       name: '',
       nameRules: [
-        v => !!v || 'Заполните имя пожалуйста',
-        v => (v && v.length <= 10) || 'Имя должно быть меньше 10 символов'
+        v => !!v || this.$t('60'),
+        v => (v && v.length <= 10) || this.$t('61')
       ],
       email: '',
       emailRules: [
-        v => !!v || 'Заполните E-mail пожалуйста',
-        v => /.+@.+\..+/.test(v) || 'E-mail должен быть формата: test@test.com'
+        v => !!v || this.$t('62'),
+        v => /.+@.+\..+/.test(v) || this.$t('63')
       ],
       number: '',
       numberRules: [
-        v => !!v || 'Заполните телефон пожалуйста'
+        v => !!v || this.$t('64')
       ],
-      annotation: ''
+      annotation: '',
+      messenger: 'Telegram'
     }
   },
   methods: {
@@ -139,5 +147,9 @@ export default {
   .consultation__submit {
     background-color: #37432b;
     border: none;
+  }
+
+  .messenger {
+    margin-top: 0 !important;
   }
 </style>

@@ -66,7 +66,7 @@ export default {
   background-color: #dee3da;
 }
 .main__title {
-  margin-top: 88px;
+  margin-top: 88px !important;
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;

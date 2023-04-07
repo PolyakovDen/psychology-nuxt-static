@@ -8,22 +8,24 @@
           </nuxt-link>
         </div>
         <v-spacer />
-        <v-toolbar-items class="hidden-sm-and-down d-flex align-center">
-          <v-btn
-            v-for="(item, index) in items"
-            :key="index"
-            v-scroll-to="item.link"
-            class="toolbar__items pt-2 pb-2"
-            text
-          >
-            {{ item.title }}
-          </v-btn>
-          <a href="https://t.me/OleksandrSam" target="_blank" rel="noopener noreferrer">
-            <img src="/telegram.png" alt="Telegram" width="61" height="53">
-          </a>
-          <a href="https://wa.me/15616483976" target="_blank" rel="noopener noreferrer">
-            <img src="/viber.png" alt="WhatsApp" width="61" height="53">
-          </a>
+        <v-toolbar-items class="hidden-sm-and-down">
+          <div class="d-flex align-center">
+            <v-btn
+              v-for="(item, index) in items"
+              :key="index"
+              v-scroll-to="item.link"
+              class="toolbar__items pt-2 pb-2"
+              text
+            >
+              {{ item.title }}
+            </v-btn>
+            <a href="https://t.me/OleksandrSam" target="_blank" rel="noopener noreferrer">
+              <img src="/telegram.png" alt="Telegram" width="61" height="53">
+            </a>
+            <a href="https://wa.me/15616483976" target="_blank" rel="noopener noreferrer">
+              <img src="/viber.png" alt="WhatsApp" width="61" height="53">
+            </a>
+          </div>
         </v-toolbar-items>
         <v-select
           v-model="language"

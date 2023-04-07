@@ -142,11 +142,11 @@ export default {
   }
 
   .about-me__wrapper5 {
-    margin-top: 170px;
+    margin-top: 150px;
   }
 
   .about-me__number5 {
-    margin-top: 145px;
+    margin-top: 160px;
   }
   .about-me__block {
     display: flex;
@@ -176,7 +176,7 @@ export default {
     }
 
     .about-me__wrapper5 {
-      margin-top: 160px;
+      margin-top: 110px;
     }
 
     .about-me__number5 {
@@ -194,7 +194,7 @@ export default {
   }
   @media screen and (max-width: 640px) {
     .about-me__wrapper5 {
-      margin-top: 130px;
+      margin-top: 60px;
     }
 
     .about-me__number5 {

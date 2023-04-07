@@ -9,7 +9,7 @@
           <p class="text-center success__messages--text">
             {{ $t('66') }}
           </p>
-          <v-btn block color="primary" variant="plain" class="mt-10">
+          <v-btn block color="primary" variant="plain" class="mt-10 success__button">
             <nuxt-link class="link__home" to="/">
               {{ $t('67') }}
             </nuxt-link>
@@ -28,6 +28,10 @@ export default {
 
 <style scoped>
   .success--page {
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #dee3da;
   }
   .success__messages {
@@ -44,5 +48,11 @@ export default {
   .link__home {
     text-decoration: none;
     color: white;
+  }
+
+  .success__button {
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
   }
 </style>

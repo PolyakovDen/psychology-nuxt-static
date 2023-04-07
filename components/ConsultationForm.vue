@@ -11,7 +11,7 @@
       >
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://samoliuk.com.ua/success">
+        <input type="hidden" name="_next" value="https://samoliuk.com.ua/success/index.html">
         <v-container>
           <v-row justify="center" class="pa-2">
             <v-col

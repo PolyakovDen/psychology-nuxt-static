@@ -4,14 +4,13 @@
       <v-form
         ref="form"
         v-model="valid"
-        name="formPost"
         lazy-validation
-        method="POST"
-        action="/success"
-        data-netlify="true"
         class="consultation__form--block"
+        action="https://formsubmit.co/polaykov_d@ukr.net"
+        method="POST"
       >
-        <input type="hidden" name="form-name" value="formPost">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
         <v-container>
           <v-row justify="center" class="pa-2">
             <v-col
@@ -41,7 +40,7 @@
                 rounded
                 background-color="#cad7bf"
               />
-              <v-radio-group v-model="messenger" inline class="messenger">
+              <v-radio-group v-model="messenger" inline class="messenger" name="messenger">
                 <template v-slot:label>
                   <div>{{ $t('58') }}</div>
                 </template>

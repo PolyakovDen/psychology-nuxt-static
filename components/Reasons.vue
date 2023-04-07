@@ -83,7 +83,7 @@ export default {
   }
 
   .reasons {
-    margin-top: 88px;
+    margin-top: 88px !important;
   }
   .reasons__title {
     font-weight: 600;

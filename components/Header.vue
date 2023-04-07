@@ -126,6 +126,6 @@ export default {
 
   .language-selector {
     max-width: 60px !important;
-    margin-top: 10px;
+    margin-top: 10px !important;
   }
 </style>

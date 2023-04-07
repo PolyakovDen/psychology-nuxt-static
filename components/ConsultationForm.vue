@@ -6,7 +6,7 @@
         v-model="valid"
         lazy-validation
         class="consultation__form--block"
-        action="https://formsubmit.co/0e45aa9979bd2e6fcaa9c904e29424e6"
+        action="https://formsubmit.co/aleks.samolyuk@gmail.com"
         method="POST"
       >
         <input type="hidden" name="_captcha" value="false">

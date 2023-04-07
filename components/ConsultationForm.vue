@@ -6,12 +6,12 @@
         v-model="valid"
         lazy-validation
         class="consultation__form--block"
-        action="https://formsubmit.co/aleks.samolyuk@gmail.com"
+        action="https://formsubmit.co/0e45aa9979bd2e6fcaa9c904e29424e6"
         method="POST"
       >
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://psychology-kiev.netlify.app/success">
+        <input type="hidden" name="_next" value="https://samoliuk.com.ua/success">
         <v-container>
           <v-row justify="center" class="pa-2">
             <v-col

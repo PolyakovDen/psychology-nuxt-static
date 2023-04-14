@@ -58,10 +58,8 @@ export default {
 
   .me__image {
     position: absolute;
-    width: 666px;
-    height: 942px;
-    right: 0;
-    bottom: -127px;
+    height: 100%;
+    right: -15px;
     z-index: 1;
   }
   .container {

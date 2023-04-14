@@ -62,7 +62,7 @@ export default {
     position: absolute;
     height: 100%;
     width: 100%;
-    max-width: 840px;
+    max-width: 900px;
     min-width: 600px;
     right: 0px;
     top: 0;

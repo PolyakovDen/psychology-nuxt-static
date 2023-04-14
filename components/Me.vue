@@ -63,7 +63,7 @@ export default {
     height: 100%;
     width: 100%;
     max-width: 900px;
-    min-width: 600px;
+    min-width: 650px;
     right: 0px;
     top: 0;
     z-index: 1;
@@ -112,7 +112,7 @@ export default {
 
   @media screen and (max-width: 960px) {
     .me__image {
-      opacity: .7 !important;
+      opacity: .6 !important;
     }
   }
 </style>

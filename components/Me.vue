@@ -34,7 +34,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <img src="/main.png" alt="Oleksandr" class="me__image" data-aos="zoom-in-up" data-aos-duration="600">
+    <img src="/main.webp" alt="Oleksandr" class="me__image" data-aos="zoom-in-up" data-aos-duration="600">
   </div>
 </template>
 
@@ -61,6 +61,9 @@ export default {
   .me__image {
     position: absolute;
     height: 100%;
+    width: 100%;
+    max-width: 840px;
+    min-width: 600px;
     right: 0px;
     top: 0;
     z-index: 1;
